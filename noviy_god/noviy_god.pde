@@ -2,13 +2,10 @@ import processing.sound.*;
 import gifAnimation.*;
 SoundFile file;
 Amplitude amp;
-
 AudioIn in ;
 PImage elka;
 PImage god;
 PImage dedmoroz;
-
-
 
 
 class Snowflake { //класс снежинок 
@@ -39,7 +36,7 @@ void setup() {
     dedmoroz = loadImage("C:/processing projects/demoscena1/demoscena1/dedmoroz.png"); //картинка дед мороза 
 
 
-    
+
 
     file = new SoundFile(this, "C:/processing projects/demoscena1/demoscena1/mix.mp3"); //добавляем песню в программу 
     file.play(); //воспроизведение музыки 
@@ -70,7 +67,7 @@ void draw() {
     image(elka, 0, 140, 350, 500); //картинка елки 
     image(god, 330, 80, 500, 250); //картинка надписи 2018 
     image(dedmoroz, 900, 220, 250, 350);
-    
+
 
 
     fill(255, 255, 25);
@@ -83,49 +80,49 @@ void draw() {
         flakes[i].fall();
         if (flakes[i].y > height + 30) flakes[i] = new Snowflake();
 
-fill (0,191, 255);
-ellipse (380, 130, amp.analyze()*400,amp.analyze()*400);
+        fill(0, 191, 255);
+        ellipse(380, 130, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (255, 255, 0);
-ellipse (400, 200, amp.analyze()*400,amp.analyze()*400);
+        fill(255, 255, 0);
+        ellipse(400, 200, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (255);
-ellipse (550, 190, amp.analyze()*400,amp.analyze()*400);
+        fill(255);
+        ellipse(550, 190, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (245, 245, 245);
-ellipse (400, 265, amp.analyze()*400,amp.analyze()*400);
+        fill(245, 245, 245);
+        ellipse(400, 265, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (230, 230, 250);
-ellipse (500, 250, amp.analyze()*400,amp.analyze()*400);
+        fill(230, 230, 250);
+        ellipse(500, 250, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (255, 105, 180);
-ellipse (510, 150, amp.analyze()*400,amp.analyze()*400);
+        fill(255, 105, 180);
+        ellipse(510, 150, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (0, 255, 255);
-ellipse (610, 150, amp.analyze()*400,amp.analyze()*400);
+        fill(0, 255, 255);
+        ellipse(610, 150, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (0, 255, 0);
-ellipse (655, 180, amp.analyze()*400,amp.analyze()*400);
+        fill(0, 255, 0);
+        ellipse(655, 180, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (255, 69, 0);
-ellipse (630, 250, amp.analyze()*400,amp.analyze()*400);
+        fill(255, 69, 0);
+        ellipse(630, 250, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (32, 178, 170);
-ellipse (730, 150, amp.analyze()*400,amp.analyze()*400);
+        fill(32, 178, 170);
+        ellipse(730, 150, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (32, 178, 170);
-ellipse (730, 150, amp.analyze()*400,amp.analyze()*400);
+        fill(32, 178, 170);
+        ellipse(730, 150, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (250, 235, 215);
-ellipse (750, 200, amp.analyze()*400,amp.analyze()*400);
+        fill(250, 235, 215);
+        ellipse(750, 200, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (250, 235, 215);
-ellipse (750, 200, amp.analyze()*400,amp.analyze()*400);
+        fill(250, 235, 215);
+        ellipse(750, 200, amp.analyze() * 400, amp.analyze() * 400);
 
-fill (255, 20, 147);
-ellipse (760, 290, amp.analyze()*400,amp.analyze()*400);
-      
-      
+        fill(255, 20, 147);
+        ellipse(760, 290, amp.analyze() * 400, amp.analyze() * 400);
+
+
 
     }
 }
@@ -168,7 +165,6 @@ class NewBall extends Ball {
         fill(this.c);
     }
 }
-
     
 
 
